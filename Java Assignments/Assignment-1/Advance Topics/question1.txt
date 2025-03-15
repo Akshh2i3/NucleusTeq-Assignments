@@ -1,0 +1,36 @@
+Question.1) Explain the concept of interfaces and abstract classes with examples.
+
+Interfaces:
+- An interface is a reference type in Java, similar to a class, that is a collection of abstract methods.
+- A class implements an interface, inheriting the abstract methods.
+- Interfaces support multiple inheritance.
+- Example:
+  interface Animal {
+      void sound();
+  }
+  class Dog implements Animal {
+      public void sound() {
+          System.out.println("Bark");
+      }
+  }
+
+Abstract Classes:
+- An abstract class is a class that cannot be instantiated and may contain abstract methods (methods without a body) and concrete methods (with implementation).
+- Abstract classes support single inheritance.
+- Example:
+  abstract class Animal {
+      abstract void sound();
+      void sleep() {
+          System.out.println("Sleeping...");
+      }
+  }
+  class Dog extends Animal {
+      void sound() {
+          System.out.println("Bark");
+      }
+  }
+
+Key Differences:
+- Interfaces provide a form of multiple inheritance; abstract classes do not.
+- Abstract classes can have constructors; interfaces cannot.
+- Interfaces only have abstract methods (until Java 8 introduced default methods), while abstract classes can have both abstract and concrete methods.

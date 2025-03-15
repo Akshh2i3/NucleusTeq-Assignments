@@ -1,0 +1,5 @@
+Question.4> Explain the concept of encapsulation with a suitable example.
+
+Encapsulation is the concept of wrapping data (variables) and methods that operate on the data into a single unit, typically a class. It restricts direct access to some components, protecting the integrity of the object’s state by only allowing manipulation through defined methods. This is achieved by using private fields and providing public getter and setter methods. 
+
+For example, in a banking system, the balance variable in an account class would be private, and deposit/withdraw methods would control changes to the balance, ensuring proper validation.

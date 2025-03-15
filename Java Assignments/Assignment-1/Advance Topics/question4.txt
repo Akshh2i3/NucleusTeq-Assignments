@@ -1,0 +1,37 @@
+Question.4> Explore multithreading in Java to perform multiple tasks concurrently.
+
+
+Multithreading in Java:
+- Multithreading is the concurrent execution of two or more threads to maximize CPU utilization.
+- A thread is a lightweight process and Java provides built-in support for multithreaded programming.
+
+Ways to create threads:
+1. Extending the Thread class:
+   class MyThread extends Thread {
+       public void run() {
+           System.out.println("Thread is running");
+       }
+   }
+   MyThread t = new MyThread();
+   t.start();
+
+2. Implementing the Runnable interface:
+   class MyRunnable implements Runnable {
+       public void run() {
+           System.out.println("Thread is running");
+       }
+   }
+   Thread t = new Thread(new MyRunnable());
+   t.start();
+
+Key Concepts:
+- Synchronization: Ensures only one thread accesses a critical section at a time.
+- Inter-thread Communication: Methods like wait(), notify(), and notifyAll() allow communication between threads.
+- Thread States: Threads can be in states like New, Runnable, Blocked, Waiting, Timed Waiting, and Terminated.
+- Thread Priority: Determines the order of thread execution.
+
+Use Cases:
+- Parallel execution of tasks.
+- Improving responsiveness in GUI applications.
+- Performing background tasks like file downloading or data processing.
+

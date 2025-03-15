@@ -1,0 +1,15 @@
+Question.1> Difference between Primitive and Reference Data Types:
+
+Primitive Data Types:
+- These are the most basic data types built into Java.
+- Examples: int, double, char, boolean.
+- They hold actual values.
+  Example:
+  int age = 25;
+
+Reference Data Types:
+- These refer to objects and hold memory addresses.
+- Examples: String, Arrays, Classes.
+- They hold references (addresses) to objects.
+  Example:
+  String name = "Akshay";
